@@ -102,7 +102,7 @@ que son links a las otras páginas*/
 
 /*Hay 3 img-tarj con id's diferentes para poner la imagen correspondiente*/
 .img-tarj#tarj1{
-  background: url("img/variedad.png");
+  background: url("Img/variedad.png");
   background-size: cover;
 }
 .img-tarj#tarj1:hover{
