@@ -107,26 +107,26 @@ que son links a las otras páginas*/
 }
 .img-tarj#tarj1:hover{
   background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
-    url("img/variedad.png"); /*Esta cambia  la opacidad ligeramente*/
+    url("Img/variedad.png"); /*Esta cambia  la opacidad ligeramente*/
   background-size: cover;
 }
 /*Es lo mismo que en las otras tarjetas, pero con otras imágenes*/
 .img-tarj#tarj2{
-  background: url("img/promo.png");
+  background: url("Img/promo.png");
   background-size: cover;
 }
 .img-tarj#tarj2:hover{
   background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
-    url("img/promo.png");
+    url("Img/promo.png");
   background-size: cover;
 }
 
 .img-tarj#tarj3{
-  background: url("img/galeria.png");
+  background: url("Img/galeria.png");
   background-size: cover;
 }
 .img-tarj#tarj3:hover{
   background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
-    url("img/galeria.png");
+    url("Img/galeria.png");
   background-size: cover;
 }
