@@ -1,10 +1,15 @@
 /*Aquí estamos definiendo todo lo de la barra de navegación*/
 .menu-pag{
   width: 100%;
+  z-index: 10000; /*Con esta línea me aseguro de que siempre esté por en cima de otros elementos*/
   background-color: black;
   padding:5px 0px;
   position: sticky;
   top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-pag div{
@@ -12,8 +17,7 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0px 0px;
-  justify-content: flex-end;
-
+  justify-content: center;
 }
 
 nav div a{

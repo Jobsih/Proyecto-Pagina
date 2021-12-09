@@ -37,7 +37,7 @@ header{
   font-size: 1.3em;
   display: block;
   padding: 1em 4em 1em 2em;
-  width: clamp(25ch,42ch,100%);
+  width: clamp(25ch,42ch,42ch);
   height: clamp(11em,11em,auto);
   background-color: #D66C16 ;
   color: white;
@@ -47,7 +47,7 @@ header{
 }
 /*La imagen*/
 .comiendo{
-  width: clamp(230px,700px,900px);
+  width: clamp(230px,700px,100%);
 }
 
 /*La sección del fondo que pone tarjetitas con imagenes,
@@ -95,17 +95,22 @@ que son links a las otras páginas*/
   margin: 0 10px 10px 10px;
 }
 
+.img-tarj:hover{ /*Este cambio estará en todas las tarjetas*/
+  transform: scale(0.95); /*Hace la imágenes más pequeñas*/
+  transition-duration: 0.75s; /*Hace que el cambio tarde medio segundo*/
+}
 
+/*Hay 3 img-tarj con id's diferentes para poner la imagen correspondiente*/
 .img-tarj#tarj1{
   background: url("img/variedad.png");
   background-size: cover;
 }
 .img-tarj#tarj1:hover{
   background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
-    url("img/variedad.png");
+    url("img/variedad.png"); /*Esta cambia  la opacidad ligeramente*/
   background-size: cover;
 }
-
+/*Es lo mismo que en las otras tarjetas, pero con otras imágenes*/
 .img-tarj#tarj2{
   background: url("img/promo.png");
   background-size: cover;
@@ -114,7 +119,6 @@ que son links a las otras páginas*/
   background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
     url("img/promo.png");
   background-size: cover;
-  transition-duration: 1s;
 }
 
 .img-tarj#tarj3{
@@ -125,5 +129,4 @@ que son links a las otras páginas*/
   background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
     url("img/galeria.png");
   background-size: cover;
-  transition-duration: 1s;
 }
