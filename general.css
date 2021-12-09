@@ -1,0 +1,49 @@
+/*Aquí estamos definiendo todo lo de la barra de navegación*/
+.menu-pag{
+  width: 100%;
+  background-color: black;
+  padding:5px 0px;
+  position: sticky;
+  top: 0;
+}
+
+.menu-pag div{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0px 0px;
+  justify-content: flex-end;
+
+}
+
+nav div a{
+  width: clamp(200px,10%,600px)10%;
+  text-align: center;
+  font-size: clamp(0.5 , 1.1em, 1.2em);
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px 30px;
+  margin: 0px 1px;
+  border-right: solid;
+  border-color: black;
+  /*border-radius: 10px;*/
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+nav div a:hover{
+  background-color: #0FA32B ;
+  color: white ;
+  text-decoration: underline;
+}
+
+.pag{
+  background-color: #0FA32B;
+  color: white;
+}
+
+.pag:hover{
+  text-decoration: underline;
+}
