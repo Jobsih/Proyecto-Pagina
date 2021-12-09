@@ -41,7 +41,7 @@ header{
   height: clamp(11em,11em,auto);
   background-color: #D66C16 ;
   color: white;
-  margin: 0px -1.4em 0.7em 0px;
+  margin: 0px 0em 0.7em 0px;
   font-family: Valentine;
   font-style: oblique;
 }
@@ -107,23 +107,23 @@ que son links a las otras páginas*/
 }
 
 .img-tarj#tarj2{
-  background: url("img/variedad.png");
+  background: url("img/promo.png");
   background-size: cover;
 }
 .img-tarj#tarj2:hover{
   background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
-    url("img/variedad.png");
+    url("img/promo.png");
   background-size: cover;
   transition-duration: 1s;
 }
 
 .img-tarj#tarj3{
-  background: url("img/variedad.png");
+  background: url("img/galeria.png");
   background-size: cover;
 }
 .img-tarj#tarj3:hover{
   background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
-    url("img/variedad.png");
+    url("img/galeria.png");
   background-size: cover;
   transition-duration: 1s;
 }
