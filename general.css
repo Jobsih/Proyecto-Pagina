@@ -1,11 +1,21 @@
+/*En este archivo se encuentran todas las características que se comparten en
+las 4 páginas*/
+
+/*Mismas carácterísticas para el fondo*/
+body{
+  font-family: sans-serif;
+  background-color: #D9D9D9;
+  margin: 0;
+}
+
 /*Aquí estamos definiendo todo lo de la barra de navegación*/
 .menu-pag{
   width: 100%;
   z-index: 10000; /*Con esta línea me aseguro de que siempre esté por en cima de otros elementos*/
   background-color: black;
   padding:5px 0px;
-  position: sticky;
-  top: 0;
+  position: sticky; /*Esta línea hace que permanezca en pantalla después de un scroll*/
+  top: 0; /*Esta ayuda a lo de arriba*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -20,77 +30,91 @@
   justify-content: center;
 }
 
+/*Todos los links comparten ciertas características*/
 nav div a{
-  width: clamp(200px,10%,600px)10%;
+  width: clamp(200px,10%,600px)10%; /*Si no le defino un width
+                    dependerá del texto y al ser diferentes, los haría irregulares*/
   text-align: center;
   font-size: clamp(0.5 , 1.1em, 1.2em);
   font-family: sans-serif;
-  text-decoration: none;
+  text-decoration: none; /*Como son links, debo deshacerme del subrayado por defecto*/
   color: white;
   background-color: black;
   padding: 10px 30px;
-  margin: 0px 1px;
-  border-right: solid;
+  margin: 1px 1px;
+  border-right: solid; /*Le doy border para que no aparezca como un bloque sólido*/
   border-color: black;
-  /*border-radius: 10px;*/
-  text-transform: uppercase;
+  text-transform: uppercase; /*Esto convierte el texto en mayúsculas*/
   font-weight: bolder;
 }
 
+/*Cuando el mouse esté en cima de los divs estará esto*/
 nav div a:hover{
   background-color: #0FA32B ;
   color: white ;
-  text-decoration: underline;
+  text-decoration: underline;/*Le regreso su subrayado*/
 }
-
+/*Esta es la propiedad del link a la página actual en la barra de navegación
+Por lo general toma las características de los demás, lo que escribo aquí es la
+diferencia (el color)*/
 .pag{
   background-color: #0FA32B;
-  color: white;
 }
 
-.pag:hover{
-  text-decoration: underline;
-}
-
+/*características que estarán en todo el footer*/
 footer{
   background-color: black;
   margin-top: 4em;
-  border-top: solid;
+  border-top: solid; /*Al ser "border-top" solamente pone el borde en la parte
+                de arriba del footer*/
   border-color: #0FA32B;
   border-width: 5px;
+  position: relative;
+  bottom: 0;
 }
+
+/*Este div define las características del contenido del footer*/
 .pie{
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /*Al poner esto, separo ambas secciones verticalmente*/
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-
+/*La información de contacto está en su propio renglón*/
 .info-cont{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-
+ /*Cada columna se diseña con esto*/
 .info{
   text-align: center;
   margin: 1em 2em 0em 2em;
   color: white;
 }
+/*El e-mail*/
+.info a{
+  text-decoration: none;
+  color: white;
+}
+.info a:hover{/*Cuando esté por en cima el mpuse, aparecerá subrayado*/
+  text-decoration: underline;
+}
 
+/*Esto nos describe al logo*/
 .github{
   margin: 2em 2em 1em 2em;
   display: block;
-  width: 5em;
-  height: 5em;
-  background-size: 5em 5em;
+  width: 5em;/*Le doy el mismo valor al <a> que al background para que lo cubra*/
+  height: 5em;/* de manera uniforme*/
+  background-size: 5em 5em; /*Es equilatero*/
   background-image: url(Img/github-oscuro.png);
-  background-position:50% 50%;
+  background-position:50% 50%; /*Con esto el logo se pone en el centro del div*/
   background-repeat:no-repeat;
 }
-
+/*Esto nos define la diferencia al poner el mouse en el logo*/
 .github:hover{
-  background-image: url(Img/github.png);
+  background-image: url(Img/github.png); /*Es otra imagen, con los colores invertidos*/
 }
