@@ -1,5 +1,7 @@
 Esta página esta re chida, apoco no?
 
+Hay una brecha enorme entre los últimos commit porque se fue la luz en mi colonia :c
+
 Fue hecha en Atom, probado principalmente con el paquete Preview HTML y en Firefox.
 Al abrirlo con Brave (un navegador basado en Chromium) la escala estaba algo movida, 
 afortunadamente lo diseñé para que fuera ligeramente responsiva, así que el diseño 
