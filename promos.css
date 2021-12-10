@@ -1,0 +1,19 @@
+/*Aquí asigné las imágenes de los paquetes*/
+.foto#box-1{
+  background-image: url("Img/Paquetes/box-california.png");
+}
+.foto#box-2{
+  background-image: url("Img/Paquetes/box-special.png");
+}
+.foto#box-3{
+  background-image: url("Img/Paquetes/box-top.png");
+}
+
+/*Aquí asigné las imágenes de las promociones*/
+.foto#dosporuno{
+  background-image: url("Img/Promos/dosporuno.png");
+}
+
+.foto#cumple{
+  background-image: url("Img/Promos/cumpleanos.png");
+}

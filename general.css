@@ -30,7 +30,7 @@ body{
   justify-content: center;
 }
 
-/*Todos los links comparten ciertas características*/
+/*Todos los links del navbarcomparten ciertas características*/
 nav div a{
   width: clamp(200px,10%,600px)10%; /*Si no le defino un width
                     dependerá del texto y al ser diferentes, los haría irregulares*/
@@ -54,12 +54,32 @@ nav div a:hover{
   color: white ;
   text-decoration: underline;/*Le regreso su subrayado*/
 }
+/*Cometí el error de hacerlo general en vez de darles clases a cada uno de los
+links del nav, ahora debo hacer esto para que no aparezca un bloque verde
+después del logo...ups*/
+nav div a#logo:hover{
+  background-color: black;
+  color: white ;
+  text-decoration: underline;/*Le regreso su subrayado*/
+}
 /*Esta es la propiedad del link a la página actual en la barra de navegación
 Por lo general toma las características de los demás, lo que escribo aquí es la
 diferencia (el color)*/
 .pag{
   background-color: #0FA32B;
 }
+
+.text-pag{
+  text-align: center;
+  align-items:stretch;
+  font-style: italic;
+  font-family: papyrus;
+  font-weight: bold;
+  font-size: 35px;
+  margin: 1em 0px;
+  width: 100%
+}
+
 
 /*características que estarán en todo el footer*/
 footer{
@@ -117,4 +137,15 @@ footer{
 /*Esto nos define la diferencia al poner el mouse en el logo*/
 .github:hover{
   background-image: url(Img/github.png); /*Es otra imagen, con los colores invertidos*/
+}
+
+
+/*Esta etiqueta es para la galería*/
+.GalImg{
+  width: 300px;
+  height: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  margin-top: 20px;
 }

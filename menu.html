@@ -16,31 +16,36 @@
     página actual-->
     <nav class="menu-pag">
       <div style="width: 30%; align-items: flex-start;">
-        <img
+        <a href="index.html" id="logo"><img
           src="Img/logoo.png"
           style="width: 5em; height: 4em; margin: auto;
           float: left;"
-        />
+        /></a>
       </div>
       <div>
         <a href="index.html">Inicio</a>
         <a class="pag" href="#">Menú</a> <!--El cambio es aquí-->
-        <a href="#">Galería</a>
-        <a href="#">Promos</a>
+        <a href="galeria.html">Galería</a>
+        <a href="promos.html">Promos</a>
       </div>
     </nav>
     <div class="main-div">
       <h1 class="text-pag">Nuestro <span style="color:#0FA32B">menú</span></h1>
+      <!--Esta etiqueta me ayuda a dividir las secciones del menú-->
+      <!--Sección del sushi-->
       <div class="div-seccion">
-        Sushi
+        Sushi <!--Nombre de la sección-->
       </div>
-      <div class="seccion">
-        <div class="platillo">
-          <div class="foto" id="fili"></div>
-          <div class="descripcion">
-            <div class="nombre">Filadelfia Roll</div>
-            <div class="precio">$83.00</div>
+      <div class="seccion"> <!--Cada div contiene dos elementos para que
+                            automáticamente solo qupan 2 platillos por fila-->
+        <div class="platillo"> <!--Toda la tarjeta está dentro de este div-->
+          <div class="foto" id="fili"></div> <!--Con esto identifico la foto-->
+          <div class="descripcion"><!--Todos los elementos que describen al
+                                        platillo-->
+            <div class="nombre">Filadelfia Roll</div> <!--Nombre del platillo-->
+            <div class="precio">$83.00</div> <!--Precio del platillo-->
             <p>XD: camarón, pepino y queso crema.<br> XF: nori.</p>
+            <!--Explicación del platillo-->
           </div>
         </div>
         <div class="platillo">
@@ -51,6 +56,9 @@
             <p>XD: cangrejo, aguacate y pepino.<br> XF: queso crema.</p>
           </div>
         </div>
+      </div>
+
+      <div class="seccion">
         <div class="platillo">
           <div class="foto" id="kioto"></div>
           <div class="descripcion">
@@ -68,42 +76,151 @@
             <p>XD: salmón, pepino y queso crema. <br>XF: aguacate.</p>
           </div>
         </div>
-
       </div>
+
+      <!--Ramen-->
       <div class="div-seccion">
         Ramen
       </div>
-
-      <div class="div-seccion">
-        Bebidas
+      <div class="seccion">
+        <div class="platillo">
+          <div class="foto" id="rpollo"></div>
+          <div class="descripcion">
+            <div class="nombre">Ramen de Pollo</div>
+            <div class="precio">$118.00</div>
+            <p>fondo ramen clásico, pollo, vegetales, huevo y kamaboko.</p>
+          </div>
+        </div>
+        <div class="platillo">
+          <div class="foto" id="rlomo"></div>
+          <div class="descripcion">
+            <div class="nombre">Ramen de Lomo</div>
+            <div class="precio">$118.00</div>
+            <p>fondo ramen clásico, pollo, vegetales, huevo y kamaboko.</p>
+          </div>
+        </div>
       </div>
+
+      <div class="seccion">
+        <div class="platillo">
+          <div class="foto" id="rcangrejo"></div>
+          <div class="descripcion">
+            <div class="nombre">Ramen de Cangrejo</div>
+            <div class="precio">$118.00</div>
+            <p>fondo ramen clásico, pollo, vegetales, huevo y kamaboko..</p>
+          </div>
+        </div>
+        <div class="platillo">
+          <div class="foto" id="rarrachera"></div>
+          <div class="descripcion">
+            <div class="nombre">Ramen de Arrachera</div>
+            <div class="precio">$118.00</div>
+            <p>Fondo ramen clásico, arrachera, vegetales, huevo y kamaboko.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bebidas-->
+      <div class="div-seccion">
+          Bebidas
+      </div>
+
+      <div class="seccion">
+        <div class="platillo">
+          <div class="foto" id="agua"></div>
+          <div class="descripcion">
+            <div class="nombre">Agua mineral</div>
+            <div class="precio">$32.00</div>
+            <p>
+              Agua carbonatada de 355ml
+            </p>
+          </div>
+        </div>
+        <div class="platillo">
+          <div class="foto" id="calpi"></div>
+          <div class="descripcion">
+            <div class="nombre">Calpi</div>
+            <div class="precio">$42.00</div>
+            <p>
+              Bebida de origen japonés no carbonatada,
+              tiene un ligero sabor a leche y lugero sabor ácido
+              </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Postres -->
       <div class="div-seccion">
         Postres
       </div>
-      <div class="div-seccion">
-        Paquetes
-      </div>
-    </div>
-    <footer>
-      <div class="pie">
-        <div class="info-cont">
-          <div class="info">
-            <p>Contacto del alumno:</p>
-            <a href="mailto:omarbeltran25@aragon.unam.mx">
-              omarbeltran25@aragon.unam.mx</a>
-          </div>
-          <div class="info">
-            <p>Ingeniería en Computación</p>
-            <p>Programación Web I</p>
-          </div>
-          <div class="info">
-            <p>Beltran Virueña Jorge Omar</p>
-            <p>Grupo: 1507</p>
+
+      <div class="seccion">
+        <div class="platillo">
+          <div class="foto" id="mochis"></div>
+          <div class="descripcion">
+            <div class="nombre">Mochi Cakes</div>
+            <div class="precio">$88.00</div>
+            <p>Bizcocho de arroz sabor matcha, <br>
+               con una bola de halado de vainilla.</p>
           </div>
         </div>
-        <a class="github"></a>
+        <div class="platillo">
+          <div class="foto" id="banana"></div>
+          <div class="descripcion">
+            <div class="nombre">Banana Ice</div>
+            <div class="precio">$62.00</div>
+            <p>Plátano empanizado con helado <br>
+              de vainilla y cajeta, fresa o chocolate.</p>
+          </div>
+        </div>
       </div>
-    </footer>
+
+      <div class="seccion">
+        <div class="platillo">
+          <div class="foto" id="tempuraH"></div>
+          <div class="descripcion">
+            <div class="nombre">Tempura Helado</div>
+            <div class="precio">$68.00</div>
+            <p>Helado de vainilla, tempurado con<br>
+              fresa, cajeta o chocolate.</p>
+          </div>
+        </div>
+        <div class="platillo">
+          <div class="foto" id="GBMango"></div>
+          <div class="descripcion">
+          <div class="nombre">Gua-bao Mango</div>
+          <div class="precio">$88.00</div>
+          <p>Pan al vapor con helado de vainilla,<br>
+            mango, nutella y nuez caramelizada.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Aquí define al footer-->
+  <footer>
+    <div class="pie"><!--Lo ponemos en un div general-->
+      <div class="info-cont"><!--Para poder separar la imagen y el resto-->
+        <div class="info"> <!--Cada columna es su div-->
+          <p>Contacto del alumno:</p>
+          <a href="mailto:omarbeltran25@aragon.unam.mx">
+            <!--Por si necesita enviarme un correo jaja-->
+            omarbeltran25@aragon.unam.mx</a>
+        </div>
+        <div class="info">
+          <p>Ingeniería en Computación</p>
+          <p>Programación Web I</p>
+        </div>
+        <div class="info">
+          <p>Beltran Virueña Jorge Omar</p>
+          <p>Grupo: 1507</p>
+        </div>
+      </div>
+      <!--Esto lleva al repositorio donde está el proyecto-->
+      <a class="github" href="https://github.com/Jobsih/Proyecto-Pagina"></a>
+    </div>
+  </footer>
 
   </body>
 </html>

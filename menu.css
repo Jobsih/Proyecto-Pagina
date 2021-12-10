@@ -1,13 +1,3 @@
-.text-pag{
-  text-align: center;
-  align-items:stretch;
-  font-style: italic;
-  font-family: papyrus;
-  font-weight: bold;
-  font-size: 35px;
-  margin: 1em 0px;
-}
-
 .main-div{
   display: flex;
   flex-wrap: wrap;
@@ -69,6 +59,53 @@
 }
 .foto#aguacate{
   background-image: url("Img/Menu/aguacate-roll.png");
+}
+
+/*Imagenes y Estilos de Ramen*/
+.foto#rpollo{
+  background-image: url("Img/Menu/Ramen/r_pollo.png");
+}
+.foto#rlomo{
+  background-image: url("Img/Menu/Ramen/r_lomo.png");
+}
+.foto#rcangrejo{
+  background-image: url("Img/Menu/Ramen/r_cangrejo.png");
+}
+.foto#rarrachera{
+  background-image: url("Img/Menu/Ramen/r_arrachera.png");
+}
+
+/*Imagenes y Estilos - Bebidas */
+.foto#agua{
+  background-image: url("Img/Menu/Bebidas/aguamineral.png");
+}
+.foto#calpi{
+  background-image: url("Img/Menu/Bebidas/calpi.png");
+}
+.foto#limon{
+  background-image: url("Img/Menu/Bebidas/limonadas.png");
+}
+.foto#te{
+  background-image: url("Img/Menu/Bebidas/lipton.png");
+}
+.foto#refresco{
+  background-image: url("Img/Bebidas/refresco.png");
+}
+
+.foto#mochis{
+  background-image: url("Img/Menu/mochicake-matcha.png");
+}
+
+.foto#banana{
+  background-image: url("Img/Menu/bananafry.png");
+}
+
+.foto#tempuraH{
+  background-image: url("Img/Menu/tempurahelado.png");
+}
+
+.foto#GBMango{
+  background-image: url("Img/Menu/guabao-helado.png");
 }
 
 .descripcion{

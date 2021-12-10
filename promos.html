@@ -3,12 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>Menú - Sushi N'Go</title>
-  <link rel="stylesheet" type= "text/css" href="styles.css">
+
+  <link rel="stylesheet" type= "text/css" href="promos.css">
   <!--En esta etiqueta Style estoy importando el css de la barra de navegación
       y el del pie de página-->
   <link rel="shortcut icon" href="Img/logoo.png">
   <style>
     @import url(./general.css);
+    /*Aquí volveré a usar el CSS del Menú, para no tener que reinventar
+        el hilo negro*/
+    @import url(./menu.css);
   </style>
 </head>
   <body>
@@ -16,29 +20,83 @@
     página actual-->
     <nav class="menu-pag">
       <div style="width: 30%; align-items: flex-start;">
-        <img
+        <a href="index.html" id="logo"><img
           src="Img/logoo.png"
           style="width: 5em; height: 4em; margin: auto;
           float: left;"
-        />
+        /></a>
       </div>
       <div>
-        <a href="#">Inicio</a>
-        <a href="#">Menú</a>
-        <a href="#">Galería</a>
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="galeria.html">Galería</a>
         <a class="pag" href="#">Promos</a> <!--El cambio es aquí-->
       </div>
     </nav>
     <div class="main-div">
+      <!--Esta básicamente sigue la misma estructura que el menú, quizás sea
+          trampa, pero espero que no jaja-->
+      <h1 class="text-pag">No es mucho, pero es trabajo
+        <span style="color:#0FA32B">honesto</span></h1>
+
+      <div class="div-seccion">Paquetes</div>
+      <div class="seccion">
+        <div class="platillo">
+          <div class="foto" id="box-1"></div>
+          <div class="descripcion">
+            <div class="nombre">Sushi BOX California</div>
+            <div class="precio">$460.00</div>
+            <p>Variedad de rollos (60pz) y <br>3 Kushiages</p>
+          </div>
+        </div>
+        <div class="platillo">
+          <div class="foto" id="box-2"></div>
+          <div class="descripcion">
+            <div class="nombre">Sushi BOX Special</div>
+            <div class="precio">$440.00</div>
+            <p>Variedad de rollos (50pz) y <br>3 Kushiages</p>
+          </div>
+        </div>
+        <div class="platillo">
+          <div class="foto" id="box-3"></div>
+          <div class="descripcion">
+            <div class="nombre">Sushi BOX TOP</div>
+            <div class="precio">$420.00</div>
+            <p>Variedad de rollos (69pz) y <br>3 Kushiages</p>
+          </div>
+        </div>
+      </div>
 
 
+      <div class="div-seccion">Promociones <br>(Al decir el nombre de la
+               promoción, se hace válida)</div>
+      <div class="seccion">
+        <div class="platillo">
+          <div class="foto" id="dosporuno"></div>
+          <div class="descripcion">
+            <div class="nombre">¡Premio doble!</div>
+            <p>De Lunes a Viernes  2x1 en todos los rollos</p>
+          </div>
+        </div>
+        <div class="platillo">
+          <div class="foto" id="cumple"></div>
+          <div class="descripcion">
+            <div class="nombre">No preguntes su edad</div>
+            <p>Un postre gratis al venir en tu cumpleaños.</p>
+          </div>
+        </div>
+      </div>
     </div>
+
+
+    <!--Aquí define al footer-->
     <footer>
-      <div class="pie">
-        <div class="info-cont">
-          <div class="info">
+      <div class="pie"><!--Lo ponemos en un div general-->
+        <div class="info-cont"><!--Para poder separar la imagen y el resto-->
+          <div class="info"> <!--Cada columna es su div-->
             <p>Contacto del alumno:</p>
             <a href="mailto:omarbeltran25@aragon.unam.mx">
+              <!--Por si necesita enviarme un correo jaja-->
               omarbeltran25@aragon.unam.mx</a>
           </div>
           <div class="info">
@@ -50,7 +108,8 @@
             <p>Grupo: 1507</p>
           </div>
         </div>
-        <a class="github"></a>
+        <!--Esto lleva al repositorio donde está el proyecto-->
+        <a class="github" href="https://github.com/Jobsih/Proyecto-Pagina"></a>
       </div>
     </footer>
 
